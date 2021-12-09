@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Product Listing</title>
+
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- slick css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+	<!-- font awesome 5 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+	<!-- JqueryUi -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+
+	<!-- fancybox -->
+	<link rel="stylesheet" href="https://icodefy.com/Tools/iZoom/js/Vendor/fancybox/helpers/jquery.fancybox-thumbs.css">
+	<!-- ZOOM -->
+	<link rel="stylesheet" href="https://icodefy.com/Tools/iZoom/css/zoom.css">
+	<!-- ZOOM style-->
+	<link href="asset/css/zoom.css" rel="stylesheet">
+
+	<!-- Main Css -->
+	<link href="asset/css/style.css" rel="stylesheet">
+	<link href="asset/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Body code start here -->
+<div class="wrapper">
+
+<!-- Header Area -->
+<header class="header_area">
+	<!-- top header -->
+	<div class="top_header_area">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-2">
+					<div class="logo">
+						<a href="index.html"><img src="asset/img/logo/logo.svg" alt="logo"></a>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="search_bar text-center">
+						<form action="" method="">
+						  <div class="pseudo-search d-flex justify-content-between">
+						    <div class="pseudo-search-in">
+						    	<input type="text" placeholder="Search for Gift Cards" autofocus required>
+						    </div>
+						    <div class="pseudo-search-btn">
+						    	<button class="fa fa-search" type="submit"></button>
+						    </div>
+						  </div>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="carted_area d-flex justify-content-end align-items-center">
+						<div class="signin_icon">
+							<a href="login.html"><img src="asset/img/icons/profile.svg" alt="profile">Sign In</a>
+						</div>
+						<div class="cart_icon">
+							<a href="#"><img src="asset/img/icons/cart.svg" alt="profile"><span>0</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- bottom header menu -->
+	<div class="bottom_header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<nav class="nav_menu">
+						<ul class="d-flex justify-content-between">
+							<li><a href="#">Sports</a></li>
+							<li><a href="#">Apparel</a></li>
+							<li class="active has_dropdown">
+								<a href="#">Accessories</a>
+								<ul class="dropdown_folder">
+									<li><a href="#">Harum Quidem</a></li>
+									<li class="has_dropdown">
+										<a href="#">Possimus</a>
+										<ul class="dropdown_folder">
+											<li><a href="#">Possimus</a></li>
+											<li><a href="#">Necessitatibus</a></li>
+											<li><a href="#">Molestias</a></li>
+											<li><a href="#">Ex Machina</a></li>
+											<li><a href="#">Possimus</a></li>
+											<li><a href="#">Necessitatibus</a></li>
+											<li><a href="#">Molestias</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Necessitatibus</a></li>
+									<li><a href="#">Molestias</a></li>
+									<li><a href="#">Ex Machina</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Materials</a></li>
+							<li><a href="#">Machinery</a></li>
+							<li><a href="#">Garden & Pets</a></li>
+							<li><a href="#">Furniture</a></li>
+							<li><a href="#">Lights & Lighting</a></li>
+							<li><a href="#">Gifts & Crafts</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- End Header Area -->
+
+
+<!-- product listing area -->
+<section class="product_listing_area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="product_listing_left_side">
+					<!-- category -->
+					<div class="product_listing_category">
+						<h2>CATEGORIES</h2>
+						<ul>
+							<li><a href="#">Cosmopolis</a></li>
+							<li><a href="#">Suitó</a></li>
+							<li><a href="#">Milancélos</a></li>
+							<li><a href="#">Blazéro</a></li>
+							<li><a href="#">Glamos</a></li>
+							<li><a href="#">Metropolis</a></li>
+							<li><a href="#">Valkyrio</a></li>
+							<li><a href="#">Scarvéro</a></li>
+							<li><a href="#">Congué</a></li>
+						</ul>
+					</div>
+					<!-- color select -->
+
+						<div class="single_brand_opt product_listing_color_select">
+							<div class="accordion" id="COLORS">
+								<div class="accordion-item">
+							    <h2 class="accordion-header" id="headingOne">
+							      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#colors_data" aria-expanded="true" aria-controls="colors_data">
+							        COLOR
+							      </button>
+							    </h2>
+							    <div id="colors_data" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#COLORS">
+									<div class="colors_item d-flex flex-wrap">
+										<div class="select_color">
+											<input type="color" name="" id="blue" value="#2A40CF">
+											<label for="blue">Blue</label>
+										</div>
+										<div class="select_color">
+											<input type="color" name="" id="orange" value="#EE5D37">
+											<label for="orange">Orange</label>
+										</div>
+										<div class="select_color">
+											<input type="color" name="" id="red" value="#FF0000">
+											<label for="red">Red</label>
+										</div>
+										<div class="select_color">
+											<input type="color" name="" id="indigo" value="#28E4EB">
+											<label for="indigo">Indigo</label>
+										</div>
+										<div class="select_color">
+											<input type="color" name="" id="black" value="#000000">
+											<label for="black">Black</label>
+										</div>
+									</div>
+							    </div>
+							  </div>
+							</div>
+						</div>
+					<!-- size -->
+
+						<div class="single_brand_opt product_listing_size">
+							<div class="accordion" id="SIZE">
+								<div class="accordion-item">
+							    <h2 class="accordion-header" id="headingOne">
+							      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#size_data" aria-expanded="true" aria-controls="size_data">
+							        SIZE
+							      </button>
+							    </h2>
+							    <div id="size_data" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#SIZE">
+									<ul class="d-flex flex-wrap">
+										<li><a href="#">SM</a></li>
+										<li class="active"><a href="#">S</a></li>
+										<li><a href="#">M</a></li>
+										<li><a href="#">L</a></li>
+										<li><a href="#">XL</a></li>
+										<li><a href="#">XXL</a></li>
+										<li><a href="#">XXXL</a></li>
+									</ul>
+							    </div>
+							  </div>
+							</div>
+						</div>
+					<!-- price -->
+
+					<div class="single_brand_opt product_listing_price">
+						<div class="accordion" id="PRICE">
+							<div class="accordion-item">
+						    <h2 class="accordion-header" id="headingOne">
+						      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#price_data" aria-expanded="true" aria-controls="price_data">
+						        PRICE
+						      </button>
+						    </h2>
+						    <div id="price_data" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#PRICE">
+								<div class="fromToprice_area d-flex flex-wrap align-items-center">
+									<div class="from_price d-flex">
+										<p>$</p>
+										<input type="number" name="" id="" value="0">
+									</div>
+									<div class="fromto">
+										<p>To</p>
+									</div>
+									<div class="to_price d-flex">
+										<p>$</p>
+										<input type="number" name="" id="" value="999.00">
+									</div>
+								</div>
+								<div class="fromtoprice_btn">
+									<input type="submit" name="" value="Apply">
+								</div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<!-- product option -->
+					<div class="product_listing_brand_opt">
+						<div class="single_brand_opt">
+							<div class="accordion" id="BRAND">
+								<div class="accordion-item">
+							    <h2 class="accordion-header" id="headingOne">
+							      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
+							        BRAND
+							      </button>
+							    </h2>
+							    <div id="collapsetwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#BRAND">
+							      <div class="accordion-body">
+							       <form action="">
+							        	<div class="instock signin_check">
+							        		<input type="checkbox" name="" id="lg">
+							        		<label for="lg">LG</label>
+							        	</div>
+							        	<div class="instock signin_check">
+							        		<input type="checkbox" name="" id="app">
+							        		<label for="app">Apple</label>
+							        	</div>
+							        </form>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+						</div>
+						<div class="single_brand_opt">
+							<div class="accordion" id="prtype">
+								<div class="accordion-item">
+							    <h2 class="accordion-header" id="headingOne">
+							      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapsethree">
+							        PRODUCT TYPE
+							      </button>
+							    </h2>
+							    <div id="collapsethree" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#prtype">
+							      <div class="accordion-body">
+							        <form action="">
+							        	<div class="instock signin_check">
+							        		<input type="checkbox" name="" id="monitor">
+							        		<label for="monitor">Monitor</label>
+							        	</div>
+							        	<div class="instock signin_check">
+							        		<input type="checkbox" name="" id="rcocker">
+							        		<label for="rcocker">Rice Cocker</label>
+							        	</div>
+							        </form>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+						</div>
+						<div class="single_brand_opt">
+							<div class="accordion" id="AVAILABILITY">
+								<div class="accordion-item">
+							    <h2 class="accordion-header" id="headingOne">
+							      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							        AVAILABILITY
+							      </button>
+							    </h2>
+							    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#AVAILABILITY">
+							      <div class="accordion-body">
+							        <form action="">
+							        	<div class="signin_check">
+							        		<input type="checkbox" name="" id="stock">
+							        		<label for="stock">In Stock</label>
+							        	</div>
+							        	<div class="signin_check">
+							        		<input type="checkbox" name="" id="outstock">
+							        		<label for="outstock">Out Of Stock</label>
+							        	</div>
+							        </form>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+						</div>
+					</div>
+					<!-- add banner -->
+					<div class="product_list_add_banner">
+						<img src="asset/img/banner/add-banner.jpg" alt="image">
+					</div>
+					<!-- custom block cms -->
+					<div class="custom_block_cms">
+						<h2>CUSTOM BLOCK CMS</h2>
+						<p>Custom CMS block displayed at the left sidebar on the Catalog Page. Put your own content here: text, html, images, media... or whatever you like.</p>
+						<p>There are many similar sample content placeholders across the store. All editable from Theme Editor.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="product_listing_right_side">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="page_title_menu">
+								<p>
+									<a href="#">Home</a>
+									<img src="asset/img/icons/d-arrow-black.svg" alt="">
+									<a href="#">New In</a>
+								</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="product_listing_shortby">
+								<div class="mobile_filter mobile_show">
+									<p><img src="asset/img/icons/filter-triger.svg" alt="image">Filter</p>
+								</div>
+								<div class="short_by d-flex">
+									<p>Sort by</p>
+									<div class="best_selling_short d-flex">
+										<p>Best Selling</p>
+										<div class="best_selling_opt">
+											<button class="dropdown-toggle" id="featue_btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+										   <i class="fas fa-chevron-down"></i>
+											</button>
+											<ul class="dropdown-menu feature_drop_menu">
+											    <li><a class="dropdown-item" href="#">Type</a></li>
+											    <li><a class="dropdown-item" href="#">Name</a></li>
+											    <li><a class="dropdown-item" href="#">Short</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- product listing products -->
+					<div class="product_listing_products_item">
+						<div class="row">
+							<div class="col-md-3">
+								<div class="single_feature_product">
+									<div class="feature_img">
+										<a href="#"><img src="asset/img/feature/1.jpg" alt="image"></a>
+									</div>
+									<div class="feature_text">
+										<h3><a href="#">LG</a></h3>
+										<p>Hentum Tosmois de  Laptop Hamo Dincidunts</p>
+										<div class="pricing">
+											<p><span class="color_r">USD 189.99</span><span class="text_overline">20.0</span>(18% off)</p>
+											<p class="color_g">Offer Price $ 170.99</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="single_feature_product">
+									<div class="feature_img">
+										<a href="#"><img src="asset/img/feature/2.jpg" alt="image"></a>
+									</div>
+									<div class="feature_text">
+										<h3><a href="#">Topshop</a></h3>
+										<p>Hentum Tosmois de  Laptop Hamo Dincidunts</p>
+										<div class="pricing">
+											<p><span class="color_r">USD 189.99</span><span class="text_overline">20.0</span>(18% off)</p>
+											<p class="color_g">Offer Price $ 170.99</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="single_feature_product">
+									<div class="feature_img">
+										<a href="#"><img src="asset/img/feature/3.jpg" alt="image"></a>
+									</div>
+									<div class="feature_text">
+										<h3><a href="#">dell</a></h3>
+										<p>Hentum Tosmois de  Laptop Hamo Dincidunts</p>
+										<div class="pricing">
+											<p><span class="color_r">USD 189.99</span><span class="text_overline">20.0</span>(18% off)</p>
+											<p class="color_g">Offer Price $ 170.99</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="single_feature_product">
+									<div class="feature_img">
+										<a href="#"><img src="asset/img/feature/4.jpg" alt="image"></a>
+									</div>
+									<div class="feature_text">
+										<h3><a href="#">apple</a></h3>
+										<p>Hentum Tosmois de  Laptop Hamo Dincidunts</p>
+										<div class="pricing">
+											<p><span class="color_r">USD 189.99</span><span class="text_overline">20.0</span>(18% off)</p>
+											<p class="color_g">Offer Price $ 170.99</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="single_feature_product">
+									<div class="feature_img">
+										<a href="#"><img src="asset/img/feature/4.jpg" alt="image"></a>
+									</div>
+									<div class="feature_text">
+										<h3><a href="#">apple</a></h3>
+										<p>Hentum Tosmois de  Laptop Hamo Dincidunts</p>
+										<div class="pricing">
+											<p><span class="color_r">USD 189.99</span><span class="text_overline">20.0</span>(18% off)</p>
+											<p class="color_g">Offer Price $ 170.99</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="single_feature_product">
+									<div class="feature_img">
+										<a href="#"><img src="asset/img/feature/1.jpg" alt="image"></a>
+									</div>
+									<div class="feature_text">
+										<h3><a href="#">LG</a></h3>
+										<p>Hentum Tosmois de  Laptop Hamo Dincidunts</p>
+										<div class="pricing">
+											<p><span class="color_r">USD 189.99</span><span class="text_overline">20.0</span>(18% off)</p>
+											<p class="color_g">Offer Price $ 170.99</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="single_feature_product">
+									<div class="feature_img">
+										<a href="#"><img src="asset/img/feature/6.jpg" alt="image"></a>
+									</div>
+									<div class="feature_text">
+										<h3><a href="#">dell</a></h3>
+										<p>Hentum Tosmois de  Laptop Hamo Dincidunts</p>
+										<div class="pricing">
+											<p><span class="color_r">USD 189.99</span><span class="text_overline">20.0</span>(18% off)</p>
+											<p class="color_g">Offer Price $ 170.99</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="single_feature_product">
+									<div class="feature_img">
+										<a href="#"><img src="asset/img/feature/5.jpg" alt="image"></a>
+									</div>
+									<div class="feature_text">
+										<h3><a href="#">Samsung</a></h3>
+										<p>Hentum Tosmois de  Laptop Hamo Dincidunts</p>
+										<div class="pricing">
+											<p><span class="color_r">USD 189.99</span><span class="text_overline">20.0</span>(18% off)</p>
+											<p class="color_g">Offer Price $ 170.99</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="single_feature_product">
+									<div class="feature_img">
+										<a href="#"><img src="asset/img/new-product/2.jpg" alt="image"></a>
+									</div>
+									<div class="feature_text">
+										<h3><a href="#">Samsung</a></h3>
+										<p>Permi Unde Ona pharetras praneu homuir</p>
+										<div class="pricing">
+											<p><span class="color_r">USD 189.99</span><span class="text_overline">20.0</span>(18% off)</p>
+											<p class="color_g">Offer Price $ 170.99</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="single_feature_product">
+									<div class="feature_img">
+										<a href="#"><img src="asset/img/new-product/3.jpg" alt="image"></a>
+									</div>
+									<div class="feature_text">
+										<h3><a href="#">LG</a></h3>
+										<p>Hentum Tosmois de  Laptop Hamo Dincidunts</p>
+										<div class="pricing">
+											<p><span class="color_r">USD 189.99</span><span class="text_overline">20.0</span>(18% off)</p>
+											<p class="color_g">Offer Price $ 170.99</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="single_feature_product">
+									<div class="feature_img">
+										<a href="#"><img src="asset/img/new-product/2.jpg" alt="image"></a>
+									</div>
+									<div class="feature_text">
+										<h3><a href="#">Samsung</a></h3>
+										<p>Permi Unde Ona pharetras praneu homuir</p>
+										<div class="pricing">
+											<p><span class="color_r">USD 189.99</span><span class="text_overline">20.0</span>(18% off)</p>
+											<p class="color_g">Offer Price $ 170.99</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="single_feature_product">
+									<div class="feature_img">
+										<a href="#"><img src="asset/img/new-product/1.jpg" alt="image"></a>
+									</div>
+									<div class="feature_text">
+										<h3><a href="#">Apple</a></h3>
+										<p>Jamie High Waist Ripped Skinny Jeans (Regular, Petite & Long)</p>
+										<div class="pricing">
+											<p><span class="color_r">USD 189.99</span><span class="text_overline">20.0</span>(18% off)</p>
+											<p class="color_g">Offer Price $ 170.99</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="single_feature_product">
+									<div class="feature_img">
+										<a href="#"><img src="asset/img/new-product/1.jpg" alt="image"></a>
+									</div>
+									<div class="feature_text">
+										<h3><a href="#">Apple</a></h3>
+										<p>Jamie High Waist Ripped Skinny Jeans (Regular, Petite & Long)</p>
+										<div class="pricing">
+											<p><span class="color_r">USD 189.99</span><span class="text_overline">20.0</span>(18% off)</p>
+											<p class="color_g">Offer Price $ 170.99</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="single_feature_product">
+									<div class="feature_img">
+										<a href="#"><img src="asset/img/new-product/4.jpg" alt="image"></a>
+									</div>
+									<div class="feature_text">
+										<h3><a href="#">Topshop</a></h3>
+										<p>Home Tosmois de  Cras Hamo Dincidunts</p>
+										<div class="pricing">
+											<p><span class="color_r">USD 189.99</span><span class="text_overline">20.0</span>(18% off)</p>
+											<p class="color_g">Offer Price $ 170.99</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="single_feature_product">
+									<div class="feature_img">
+										<a href="#"><img src="asset/img/new-product/5.jpg" alt="image"></a>
+									</div>
+									<div class="feature_text">
+										<h3><a href="#">DELL</a></h3>
+										<p>Hentum Tosmois de  Cras Tele Hamo Dincidunts</p>
+										<div class="pricing">
+											<p><span class="color_r">USD 189.99</span><span class="text_overline">20.0</span>(18% off)</p>
+											<p class="color_g">Offer Price $ 170.99</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="single_feature_product">
+									<div class="feature_img">
+										<a href="#"><img src="asset/img/new-product/3.jpg" alt="image"></a>
+									</div>
+									<div class="feature_text">
+										<h3><a href="#">LG</a></h3>
+										<p>Hentum Tosmois de  Laptop Hamo Dincidunts</p>
+										<div class="pricing">
+											<p><span class="color_r">USD 189.99</span><span class="text_overline">20.0</span>(18% off)</p>
+											<p class="color_g">Offer Price $ 170.99</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- loading button -->
+						<div class="col-md-12">
+							<div class="loading_btn text-center" id="loadmore">
+								<a href="#">
+									<img src="asset/img/icons/loading.svg" alt="load-image">Loading
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End product listing area -->
+
+
+<!-- Footer area -->
+<section class="footer_top_area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="subscribe_newsletter_area text-center">
+					<h2 class="subscribenew_title">SUBSCRIBE TO OUR NEWSLETTER</h2>
+					<p>Get the latest updates on new products and upcoming sales</p>
+					<div class="footer_searchbar search_bar text-center">
+						<form action="" method="">
+						  <div class="pseudo-search d-flex justify-content-between">
+						    <div class="pseudo-search-in">
+						    	<input type="email" placeholder="enter your email address" autofocus required>
+						    </div>
+						    <div class="pseudo-search-btn">
+						    	<button type="submit">Subscribe</button>
+						    </div>
+						  </div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_top_menu">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="footer_categories footer_cm_menu">
+						<h2>CATEGORIES</h2>
+						<ul>
+							<li><a href="#">Appliances</a></li>
+							<li><a href="#">Computers & Laptops</a></li>
+							<li><a href="#">Cameras</a></li>
+							<li><a href="#">Mobile Phones & Tablets</a></li>
+							<li><a href="#">Televisions</a></li>
+							<li><a href="#">Video Games & Systems</a></li>
+							<li><a href="#">Weekly Deals</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="footer_further_info footer_cm_menu">
+						<h2>FURTHER INFO.</h2>
+						<ul>
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Gift Certificates</a></li>
+							<li><a href="#">Theme Styles</a></li>
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Brands</a></li>
+							<li><a href="#">Sitemap</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="footer_customer_service footer_cm_menu">
+						<h2>CUSTOMER SERVICE</h2>
+						<ul>
+							<li><a href="#">Help & FAQs</a></li>
+							<li><a href="#">Terms of Conditions</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Online Returns Policy</a></li>
+							<li><a href="#">Rewards Program</a></li>
+							<li><a href="#">Rebate Center</a></li>
+							<li><a href="#">Partners</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="footer_contact footer_cm_menu">
+						<h2>CATEGORIES</h2>
+						<div class="footer_contact_info d-flex">
+							<i class="fas fa-map-marker-alt"></i>
+							<p>685 Market Street San Francisco, CA 94105, US</p>
+						</div>
+						<div class="footer_contact_info d-flex">
+							<i class="fas fa-phone-alt"></i>
+							<p>Call us at (415) 555-5555</p>
+						</div>
+						<div class="footer_contact_info d-flex">
+							<i class="fas fa-envelope"></i>
+							<p>Email: example@domain.com</p>
+						</div>
+						<div class="social_contact">
+							<h2>Connect Us</h2>
+							<ul class="d-flex">
+								<li><a href="#"><img src="asset/img/social-icon/twitter.svg" alt=""></a></li>
+								<li><a href="#"><img src="asset/img/social-icon/google-plus.svg" alt=""></a></li>
+								<li><a href="#"><img src="asset/img/social-icon/facebook.svg" alt=""></a></li>
+								<li><a href="#"><img src="asset/img/social-icon/instagram.svg" alt=""></a></li>
+								<li><a href="#"><img src="asset/img/social-icon/linkedin.svg" alt=""></a></li>
+								<li><a href="#"><img src="asset/img/social-icon/pinterest.svg" alt=""></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+</section>
+
+<!-- footer bottom -->
+<section class="footer-bottom_area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="footer_bottom_info d-flex justify-content-between align-items-center">
+					<div class="footer_bottom_left">
+						<p>© 2021 All Rights Reserved. Powered by Shopify. Shopify Themes by HaloThemes.com.</p>
+					</div>
+					<div class="footer_bottom_right">
+						<ul class="d-flex">
+							<li>
+								<a href="#"><img src="asset/img/payment-method/master-card.svg" alt=""></a>
+							</li>
+							<li>
+								<a href="#"><img src="asset/img/payment-method/american-express.svg" alt=""></a>
+							</li>
+							<li>
+								<a href="#"><img src="asset/img/payment-method/discover.svg" alt=""></a>
+							</li>
+							<li>
+								<a href="#"><img src="asset/img/payment-method/paypal.svg" alt=""></a>
+							</li>
+							<li>
+								<a href="#"><img src="asset/img/payment-method/sage.svg" alt=""></a>
+							</li>
+							<li>
+								<a href="#"><img src="asset/img/payment-method/gwallet.svg" alt=""></a>
+							</li>
+							<li>
+								<a href="#"><img src="asset/img/payment-method/master-card.svg" alt=""></a>
+							</li>
+							<li>
+								<a href="#"><img src="asset/img/payment-method/american-express.svg" alt=""></a>
+							</li>
+							<li>
+								<a href="#"><img src="asset/img/payment-method/discover.svg" alt=""></a>
+							</li>
+							<li>
+								<a href="#"><img src="asset/img/payment-method/paypal.svg" alt=""></a>
+							</li>
+							<li>
+								<a href="#"><img src="asset/img/payment-method/sage.svg" alt=""></a>
+							</li>
+							<li>
+								<a href="#"><img src="asset/img/payment-method/gwallet.svg" alt=""></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Footer area -->
+
+
+	
+</div>
+<!-- End body code start here -->
+
+
+<!-- jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+<!-- bootstrap bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- jquery ui -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!-- slick js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<!-- product zoom -->
+<script src="https://icodefy.com/Tools/iZoom/js/Vendor/jquery/jquery-ui.min.js"></script>
+<script src="https://icodefy.com/Tools/iZoom/js/Vendor/ui-carousel/ui-carousel.js"></script>
+
+<!-- zoom js -->
+<script src="asset/js/zoom.js"></script>
+
+<!-- main js -->
+<script src="asset/js/custom.js"></script>
+
+</body>
+</html>

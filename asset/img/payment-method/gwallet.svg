@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="22" viewBox="0 0 36 22">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 51 32">
+      <image width="51" height="32" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAgCAYAAAC/40AfAAAABmJLR0QA/wD/AP+gvaeTAAADA0lEQVRYw+3Zy08TQRzA8XoQFXwSRawGbx48iI94EmNUREAUo0UFX4CoUVGRA5qYmBhPJh5MxBdoRKMxPkAeUiRiNBgkFpRHpUiRhyhqK+WhpWVL26+zq/Fv2CWdZHZ2kj3sJzO/nd/M6oBsUe1ou8jvn60TFxtjo9h0jKESwAQwAYyKMR6fh363Q2k1jRnxuikwX+fo8zRui1buawPj9+N1OPD1O5R7uXQOtpNm3IrhSQy7yhJpsNVpA+OqqeVL7Ea+JmxgpOaOPC78dNk5XrWPbcXrMRTHkN90SZ2YrzYn71vtDDklpf/z9BnaZ82jPWw+tj1z4bPImLyD3Gy+TJKAJAlQzsvD/JKG1IXptTvJOFtF9IEisi9UY+keZKigAKs+AuvsCLoi5+ApDxIPZlH7pZLk0o1sK4kl3WigY8CqLky9xcaa/UWsTHvMitRHbD9VyavHr+lYtIy2mXqB0vM7dyI0TuCzNZOMiu0KJrl0A7W9r9WFkafWuTwTqzMKFVCUqIbMQl4sXcvH0DBaQ8PpywmBBh0DdTPIMkaTVBInYieWZ52l6osZl3uU+xVtxB0pUUByvRG5ibbpobRMncWPtMnwTofTNJ6TxhUCE6/ETbH1gTq/Zj6fn6IXn1h38AlR6YVcXrKV1inTMIeE0rtzhsCM47dWMMoKP+rj/K16VqY+5NbCdVhCJtM8aSrfT2yGDxE43gZxvHyVgpHjprKrTN3rjLmjn5SM21SGL8A8KVhgQui7fg169tD5Jpj0smgBiSOlNAHTtzfqxvxyjXJvZw71QRNpDJqAeY4e1/tmcFzhVbWeHXLwi1GRv2rdgx3qxnglDx8TEkW865TalZyCX/LiG6ogt2o5hn/xcro6C6fHqf50xn71Kk3h4VgiFzNsMv1dXPvrOGSMV6aYjLnbclMbuZlfknBbLEg9Pf8TzdY+M7ufJiqJZmr5FqWv2S3AsJhSeY0XOfZ8L/db8sWeRtL25kzyjjDg7mNU65uzwBlAABPAqBMzpg7OTzBGfmn8AUgQg52W0OvbAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABJ0RVh0RVhJRjpPcmllbnRhdGlvbgAxhFjs7wAAAABJRU5ErkJggg=="/>
+    </pattern>
+  </defs>
+  <rect id="Google_Wallet_x32" width="36" height="22" fill="url(#pattern)"/>
+</svg>

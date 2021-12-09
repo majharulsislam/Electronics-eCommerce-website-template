@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Order Full</title>
+
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- slick css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+	<!-- font awesome 5 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+	<!-- JqueryUi -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+	<!-- Main Css -->
+	<link href="asset/css/style.css" rel="stylesheet">
+	<link href="asset/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Body code start here -->
+<div class="wrapper">
+
+<!-- Header Area -->
+<header class="header_area">
+	<!-- top header -->
+	<div class="top_header_area">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-2">
+					<div class="logo">
+						<a href="index.html"><img src="asset/img/logo/logo.svg" alt="logo"></a>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="search_bar text-center">
+						<form action="" method="">
+						  <div class="pseudo-search d-flex justify-content-between">
+						    <div class="pseudo-search-in">
+						    	<input type="text" placeholder="Search for Gift Cards" autofocus required>
+						    </div>
+						    <div class="pseudo-search-btn">
+						    	<button class="fa fa-search" type="submit"></button>
+						    </div>
+						  </div>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="carted_area d-flex justify-content-end align-items-center">
+						<div class="signin_icon">
+							<a href="login.html"><img src="asset/img/icons/profile.svg" alt="profile">Sign In</a>
+						</div>
+						<div class="cart_icon">
+							<a href="#"><img src="asset/img/icons/cart.svg" alt="profile"><span>0</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- bottom header menu -->
+	<div class="bottom_header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<nav class="nav_menu">
+						<ul class="d-flex justify-content-between">
+							<li><a href="#">Sports</a></li>
+							<li><a href="#">Apparel</a></li>
+							<li><a href="#">Accessories</a></li>
+							<li><a href="#">Materials</a></li>
+							<li><a href="#">Machinery</a></li>
+							<li><a href="#">Garden & Pets</a></li>
+							<li><a href="#">Furniture</a></li>
+							<li><a href="#">Lights & Lighting</a></li>
+							<li class="active"><a href="#">Gifts & Crafts</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- End Header Area -->
+
+<!-- Page title -->
+<section class="page_title_without_bg">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="page_title_menu">
+					<p>
+						<a href="#">Home</a>
+						<img src="asset/img/icons/d-arrow-black.svg" alt="">
+						<a href="#">Account</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Page title -->
+
+<!-- My account area -->
+<section class="my_account_area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 offset-md-1 inner_padding">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="my_prfile_box_area d-flex align-items-center">
+							<div class="my_profile_img">
+								<img src="asset/img/icons/profile-demo.svg" alt="image">
+							</div>
+							<div class="my_profile_head">
+								<p>Hello,</p>
+								<h1>Jon Dey</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- my profile with tab option area -->
+				<div class="my_profile_with_tab_area">
+					<div class="row">
+						<div class="col-md-12">
+							<!-- tab button -->
+							<div class="tab">
+							  <button class="tablinks activatetab" onclick="openCity(event, 'Orders')" id="defaultOpen"><img src="asset/img/icons/order.svg" alt="">Orders</button>
+
+							  <button class="tablinks" onclick="openCity(event, 'EditProfile')"><img src="asset/img/icons/edit-profile.svg" alt="">Edit Profile</button>
+
+							  <button class="tablinks" onclick="openCity(event, 'ChangePassword')"><img src="asset/img/icons/key.svg" alt="">Change Password</button>
+
+							  <button class="tablinks" onclick="openCity(event, 'Addresses')"><img src="asset/img/icons/address-card.svg" alt="">Addresses</button>
+
+							  <button class="tablinks" onclick="openCity(event, 'LogOut')"><img src="asset/img/icons/logout.svg" alt=""><a href="login.html">Log Out</a></button>
+							</div>
+							<!-- tab content -->
+							<div id="Orders" class="tabcontent opentab">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="order_history_title">
+											<h1>Order History</h1>
+										</div>
+										<!-- order history box -->
+										<div class="order_history_box-area">
+											<div class="order_history_top_head d-flex justify-content-between">
+												<div class="order_history_order_id">
+													<h2>Order# 166405</h2>
+													<p>Date Added: 18 Nov 2021</p>
+												</div>
+												<div class="order_history_pending_btn">
+													<a href="#"><img src="asset/img/icons/check-red.svg" alt="">Pending</a>
+												</div>
+											</div>
+											<div class="order_history_bottom_products">
+												<div class="row align-items-center">
+													<div class="col-md-1">
+														<div class="order_history_product_img">
+															<a href="#"><img src="asset/img/cart/2.png" alt=""></a>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="order_history_product_name">
+															<h3>Deli 4116 Fingerprint & Digital Safe Box / Locker / Vault</h3>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="order_history_product_price">
+															<h1>$ 149.00</h1>
+														</div>
+													</div>
+													<div class="col-md-2">
+														<div class="order_history_product_btn">
+															<a href="order-full-with-details.html">View</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- edit profile -->
+							<div id="EditProfile" class="tabcontent">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="my_profile_edit_area">
+											<h2 class="my_account_heading">My Account Information</h2>
+											<form action="" method="">
+												<div class="row"> 
+													<div class="col-md-6 mb-3">
+														<div class="form-group">
+												           <label for="fname">First Name <span>*</span></label>
+												           <input type="text" name="" class="form-control" id="fname" required="required" placeholder="Jon">
+												        </div>
+													</div>
+													<div class="col-md-6 mb-3">
+														<div class="form-group">
+												           <label for="lname">Last Name <span>*</span></label>
+												           <input type="text" name="" class="form-control" id="lname" required="required" placeholder="Dey">
+												        </div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-12 mb-3">
+														<div class="form-group">
+												           <label for="email">Email <span>*</span></label>
+												           <input type="email" name="" class="form-control" id="email" required="required" placeholder="jondey@mymail.com">
+												        </div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-12 mb-3">
+														<div class="form-group">
+												           <label for="telphone">Telephone <span>*</span></label>
+												           <input type="number" name="" class="form-control" id="telphone" required="required" placeholder="0123456789">
+												        </div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-12 mb-3">
+														<div class="form-group">
+												           <label for="fax">Fax</label>
+												           <input type="text" name="" class="form-control" id="fax" required="required" placeholder="jondey@mymail.com">
+												        </div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-12 mb-3">
+														<div class="form-group">
+															<input type="submit" class="submit_btn submit_btn_main" value="Continue">
+												        </div>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- change password -->
+							<div id="ChangePassword" class="tabcontent">
+								<div class="row">
+									<div class="col-md-7">
+										<div class="pass_change_area">
+											<h2 class="my_account_heading">My Account Information</h2>
+											<p>Please type and confirm to change your current password.</p>
+											<form action="" method="" class="password_change">
+												<div class="row"> 
+													<div class="col-md-12 mb-3">
+														<div class="form-group">
+												           <label for="fname">Password <span>*</span></label>
+												           <input type="password" name="password" class="form-control" id="password" required="required" placeholder="Password">
+												        </div>
+													</div>
+													<div class="col-md-12 mb-3">
+														<div class="form-group">
+												           <label for="lname">Password Confirm <span>*</span></label>
+												           <input type="password" name="conf_pass" class="form-control" id="conf_pass" required="required" placeholder="Password Confirm">
+												        </div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-12 mb-3">
+														<div class="form-group">
+															<input type="submit" class="submit_btn submit_btn_main" value="Continue">
+												        </div>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="Addresses" class="tabcontent">
+								<div class="row">
+									<div class="col-md-12">
+									 	<div class="my_account_address_book_area">
+									 		<h2 class="my_account_heading">Address Book</h2>
+									 		<div class="my_account_address_book_box">
+									 			<div class="row">
+									 				<div class="col-md-6">
+									 					<div class="my_account_address_book_text">
+									 						<h2 class="my_ac_common_title">Melvin Porter</h2>
+									 						<p>P.O. Box 132 1599 Curabitur Rd.</p>
+									 						<p>Bandera South Dakota 45149</p>
+									 						<p>(959) 119-8364</p>
+									 					</div>
+									 				</div>
+									 				<div class="col-md-6">
+									 					<div class="address_book_editdelete_area d-flex justify-content-between">
+									 						<div class="address_book_default">
+									 							<p><img src="asset/img/icons/check-g.svg" alt="">Default</p>
+									 						</div>
+									 						<div class="address_editdelete_icon">
+									 							<a href="my-account-information.html"><img src="asset/img/icons/edit.svg" alt=""></a>
+									 							<a href="#"><img src="asset/img/icons/delete.svg" alt=""></a>
+									 						</div>
+									 					</div>
+									 				</div>
+									 			</div>
+									 		</div>
+									 		<div class="my_account_new_address_box">
+									 			<a href="my-account-information.html"><img src="asset/img/icons/plusB.svg" alt="image">New Addres</a>
+									 		</div>
+									 	</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End My account area -->
+
+
+<!-- footer bottom -->
+<section class="footer-bottom_area" id="footerB">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="footer_bottom_info">
+					<div class="footer_bottom_left text-center">
+						<p>© 2021 All Rights Reserved. Powered by Shopify. Shopify Themes by HaloThemes.com.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Footer area -->
+
+</div>
+<!-- End body code start here -->
+
+
+<!-- jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+<!-- bootstrap bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- jquery ui -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!-- slick js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<!-- main js -->
+<script src="asset/js/custom.js"></script>
+
+</body>
+</html>

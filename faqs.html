@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FAQs</title>
+
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- slick css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+	<!-- font awesome 5 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+	<!-- JqueryUi -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+	<!-- Main Css -->
+	<link href="asset/css/style.css" rel="stylesheet">
+	<link href="asset/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Body code start here -->
+<div class="wrapper">
+
+<!-- Header Area -->
+<header class="header_area">
+	<!-- top header -->
+	<div class="top_header_area">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-2">
+					<div class="logo">
+						<a href="index.html"><img src="asset/img/logo/logo.svg" alt="logo"></a>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="search_bar text-center">
+						<form action="" method="">
+						  <div class="pseudo-search d-flex justify-content-between">
+						    <div class="pseudo-search-in">
+						    	<input type="text" placeholder="Search for Gift Cards" autofocus required>
+						    </div>
+						    <div class="pseudo-search-btn">
+						    	<button class="fa fa-search" type="submit"></button>
+						    </div>
+						  </div>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="carted_area d-flex justify-content-end align-items-center">
+						<div class="signin_icon">
+							<a href="login.html"><img src="asset/img/icons/profile.svg" alt="profile">Sign In</a>
+						</div>
+						<div class="cart_icon">
+							<a href="#"><img src="asset/img/icons/cart.svg" alt="profile"><span>0</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- bottom header menu -->
+	<div class="bottom_header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<nav class="nav_menu">
+						<ul class="d-flex justify-content-between">
+							<li><a href="#">Sports</a></li>
+							<li><a href="#">Apparel</a></li>
+							<li class="active has_dropdown">
+								<a href="#">Accessories</a>
+								<ul class="dropdown_folder">
+									<li><a href="#">Harum Quidem</a></li>
+									<li class="has_dropdown">
+										<a href="#">Possimus</a>
+										<ul class="dropdown_folder">
+											<li><a href="#">Possimus</a></li>
+											<li><a href="#">Necessitatibus</a></li>
+											<li><a href="#">Molestias</a></li>
+											<li><a href="#">Ex Machina</a></li>
+											<li><a href="#">Possimus</a></li>
+											<li><a href="#">Necessitatibus</a></li>
+											<li><a href="#">Molestias</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Necessitatibus</a></li>
+									<li><a href="#">Molestias</a></li>
+									<li><a href="#">Ex Machina</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Materials</a></li>
+							<li><a href="#">Machinery</a></li>
+							<li><a href="#">Garden & Pets</a></li>
+							<li><a href="#">Furniture</a></li>
+							<li><a href="#">Lights & Lighting</a></li>
+							<li><a href="#">Gifts & Crafts</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- End Header Area -->
+
+<!-- Page title -->
+<section class="page_title_without_bg">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="page_title_menu">
+					<p>
+						<a href="#">Home</a>
+						<img src="asset/img/icons/d-arrow-black.svg" alt="">
+						<a href="#">FAQs</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Page title -->
+
+<!-- FAQs Area -->
+<section class="ecom_faqs_area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 offset-md-1 inner_padding">
+				<h1>FAQ's</h1>
+				<div class="ecom_faqs_items">
+					<div class="tab">
+					  <button class="tablinks activatetab" onclick="openCity(event, 'RewardPoints')" id="defaultOpen">Reward Points</button>
+					  <button class="tablinks" onclick="openCity(event, 'SeatAvailability')">Seat Availability</button>
+					  <button class="tablinks" onclick="openCity(event, 'LiveTrainStatus')">Live Train Status</button>
+					  <button class="tablinks" onclick="openCity(event, 'ConfirmationProbability')">Confirmation Probability</button>
+					  <button class="tablinks" onclick="openCity(event, 'RailWisdom')">RailWisdom</button>
+					  <button class="tablinks" onclick="openCity(event, 'Refund')">Refund</button>
+					</div>
+
+					<div id="RewardPoints" class="tabcontent opentab">
+					  <div class="accordion" id="accordionExample">
+						  <div class="accordion-item">
+						    <h2 class="accordion-header" id="headingOne">
+						      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						        What is RailYatri cash?
+						      </button>
+						    </h2>
+						    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+						      <div class="accordion-body">
+						        <p>RailYatri cash is a RailYatri currency that is added in the Wallet through our various cash back offers. Cash backs are credited to your wallet, when you have availed any of our e-commerce services (such as Food, Bus or hotel booking services). With the RY cash, deposited in your wallet, you can make future purchases.</p>
+						      </div>
+						    </div>
+						  </div>
+
+						  	<div class="accordion-item">
+							    <h2 class="accordion-header" id="headingOne">
+							      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
+							        What is RailYatri Reward point?
+							      </button>
+							    </h2>
+								<div id="collapsetwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+								      <div class="accordion-body">
+							        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur culpa explicabo totam earum voluptatem reprehenderit!</p>
+							      </div>
+							    </div>
+					  		</div>
+
+						  <div class="accordion-item">
+						    <h2 class="accordion-header" id="headingOne">
+						      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapsethree">
+						        What is RailYatri Reward point?
+						      </button>
+						    </h2>
+						    <div id="collapsethree" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+						      <div class="accordion-body">
+						        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur culpa explicabo totam earum voluptatem reprehenderit!</p>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+
+					<div id="SeatAvailability" class="tabcontent">					 
+					  <div class="accordion" id="accordionExample">
+						  <div class="accordion-item">
+						    <h2 class="accordion-header" id="headingOne">
+						      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						        What is RailYatri cash?
+						      </button>
+						    </h2>
+						    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+						      <div class="accordion-body">
+						        <p>RailYatri cash is a RailYatri currency that is added in the Wallet through our various cash back offers. Cash backs are credited to your wallet, when you have availed any of our e-commerce services (such as Food, Bus or hotel booking services). With the RY cash, deposited in your wallet, you can make future purchases.</p>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="accordion-item">
+						    <h2 class="accordion-header" id="headingOne">
+						      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
+						        What is RailYatri Reward point?
+						      </button>
+						    </h2>
+							<div id="collapsetwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+							      <div class="accordion-body">
+						        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur culpa explicabo totam earum voluptatem reprehenderit!</p>
+						      </div>
+						    </div>
+					  	</div>
+						</div>
+					</div>
+
+					<div id="LiveTrainStatus" class="tabcontent">					 
+					  <div class="accordion" id="accordionExample">
+						  <div class="accordion-item">
+						    <h2 class="accordion-header" id="headingOne">
+						      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						        What is RailYatri cash?
+						      </button>
+						    </h2>
+						    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+						      <div class="accordion-body">
+						        <p>RailYatri cash is a RailYatri currency that is added in the Wallet through our various cash back offers. Cash backs are credited to your wallet, when you have availed any of our e-commerce services (such as Food, Bus or hotel booking services). With the RY cash, deposited in your wallet, you can make future purchases.</p>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="accordion-item">
+						    <h2 class="accordion-header" id="headingOne">
+						      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
+						        What is RailYatri Reward point?
+						      </button>
+						    </h2>
+							<div id="collapsetwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+							      <div class="accordion-body">
+						        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur culpa explicabo totam earum voluptatem reprehenderit!</p>
+						      </div>
+						    </div>
+					  	</div>
+						</div>
+					</div>
+
+					<div id="ConfirmationProbability" class="tabcontent">					 
+					  <div class="accordion" id="accordionExample">
+						  <div class="accordion-item">
+						    <h2 class="accordion-header" id="headingOne">
+						      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						        What is RailYatri cash?
+						      </button>
+						    </h2>
+						    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+						      <div class="accordion-body">
+						        <p>RailYatri cash is a RailYatri currency that is added in the Wallet through our various cash back offers. Cash backs are credited to your wallet, when you have availed any of our e-commerce services (such as Food, Bus or hotel booking services). With the RY cash, deposited in your wallet, you can make future purchases.</p>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+
+					<div id="RailWisdom" class="tabcontent">					 
+					  <div class="accordion" id="accordionExample">
+						  <div class="accordion-item">
+						    <h2 class="accordion-header" id="headingOne">
+						      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						        What is RailYatri cash?
+						      </button>
+						    </h2>
+						    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+						      <div class="accordion-body">
+						        <p>RailYatri cash is a RailYatri currency that is added in the Wallet through our various cash back offers. Cash backs are credited to your wallet, when you have availed any of our e-commerce services (such as Food, Bus or hotel booking services). With the RY cash, deposited in your wallet, you can make future purchases.</p>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="accordion-item">
+						    <h2 class="accordion-header" id="headingOne">
+						      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
+						        What is RailYatri Reward point?
+						      </button>
+						    </h2>
+							<div id="collapsetwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+							      <div class="accordion-body">
+						        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur culpa explicabo totam earum voluptatem reprehenderit!</p>
+						      </div>
+						    </div>
+					  	</div>
+						</div>
+					</div>
+
+					<div id="Refund" class="tabcontent">
+					  <div class="accordion" id="accordionExample">
+						  <div class="accordion-item">
+						    <h2 class="accordion-header" id="headingOne">
+						      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						        What is RailYatri cash?
+						      </button>
+						    </h2>
+						    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+						      <div class="accordion-body">
+						        <p>RailYatri cash is a RailYatri currency that is added in the Wallet through our various cash back offers. Cash backs are credited to your wallet, when you have availed any of our e-commerce services (such as Food, Bus or hotel booking services). With the RY cash, deposited in your wallet, you can make future purchases.</p>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End FAQs area -->
+
+
+<!-- footer bottom -->
+<section class="footer-bottom_area" id="footerB">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="footer_bottom_info">
+					<div class="footer_bottom_left text-center">
+						<p>© 2021 All Rights Reserved. Powered by Shopify. Shopify Themes by HaloThemes.com.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Footer area -->
+
+</div>
+<!-- End body code start here -->
+
+
+<!-- jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+<!-- bootstrap bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- jquery ui -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!-- slick js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<!-- main js -->
+<script src="asset/js/custom.js"></script>
+
+</body>
+</html>
